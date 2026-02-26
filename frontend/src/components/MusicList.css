@@ -1,0 +1,121 @@
+/* ===============================
+   Music List Layout
+================================ */
+
+.music-list {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.music-heading {
+  margin-bottom: 20px;
+  color: #4f46e5;
+}
+
+/* CARD */
+.music-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  gap: 32px; /* 🔑 GAP BETWEEN INFO & BUTTONS */
+}
+
+/* LEFT INFO */
+.music-info {
+  flex: 1;
+  min-width: 0; /* 🔑 REQUIRED for ellipsis */
+}
+
+.music-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 250px;
+}
+
+.music-meta {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* BUTTON BASE */
+.btn {
+  height: 38px;
+  min-width: 80px;
+  padding: 0 14px;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BUTTON COLORS */
+.btn.download {
+  background: #1d4ed8;
+}
+
+.btn.play {
+  background: #2563eb;
+}
+
+.btn.lyrics {
+  background: #7c3aed;
+}
+
+.btn.delete {
+  background: #dc2626;
+}
+
+/* LYRICS BOX */
+.lyrics-box {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f4f4f7;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.lyrics-box pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 14px;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .music-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions {
+    justify-content: flex-end;
+  }
+}

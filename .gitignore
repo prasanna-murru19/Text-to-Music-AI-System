@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+node_modules/
+.env
+generated_music/
+*.mid
+backend/app/soundfonts/
+*.sf2
+*.wav

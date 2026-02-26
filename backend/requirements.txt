@@ -1,0 +1,38 @@
+# Backend framework
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+psycopg2-binary
+passlib[bcrypt]
+
+# Music & MIDI
+pretty_midi
+numpy
+
+# NLP (emotion, genre detection)
+nltk
+
+# File handling
+python-multipart
+
+# Audio processing
+soundfile
+librosa
+scipy
+pyworld
+
+# Offline Text-to-Speech (REQUIRED)
+pyttsx3
+
+# Optional: high-quality (free) neural voices via Microsoft Edge TTS
+edge-tts
+
+# Environment variables
+python-dotenv
+
+
+torch
+bark
+soundfile
